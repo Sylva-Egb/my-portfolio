@@ -63,6 +63,54 @@ function handleImageError() {
 
                         <template v-else>
                             <Link
+                                :href="route('welcome')"
+                                class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                            >
+                                {{ __('Accueil') }}
+                            </Link>
+
+                            <Link
+                                :href="route('about-me')"
+                                class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                            >
+                                {{ __('A propos') }}
+                            </Link>
+
+                            <Link
+                                :href="route('portfolio')"
+                                class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                            >
+                                {{ __("Portfolio") }}
+                            </Link>
+
+                            <Link
+                                :href="route('services')"
+                                class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                            >
+                                {{ __('Services') }}
+                            </Link>
+
+                            <Link
+                                :href="route('experiences')"
+                                class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                            >
+                                {{ __('Experiences') }}
+                            </Link>
+
+                            <Link
+                                :href="route('blog')"
+                                class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                            >
+                                {{ __('Blog') }}
+                            </Link>
+
+                            <Link
+                                :href="route('contact-me')"
+                                class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                            >
+                                {{ __('Contact') }}
+                            </Link>
+                            <Link
                                 :href="route('login')"
                                 class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
                             >
