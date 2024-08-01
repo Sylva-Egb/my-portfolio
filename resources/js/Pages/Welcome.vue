@@ -66,49 +66,49 @@ function handleImageError() {
                                 :href="route('welcome')"
                                 class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
                             >
-                                {{ __('Accueil') }}
+                                Accueil
                             </Link>
 
                             <Link
                                 :href="route('about-me')"
                                 class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
                             >
-                                {{ __('A propos') }}
+                                A propos
                             </Link>
 
                             <Link
                                 :href="route('portfolio')"
                                 class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
                             >
-                                {{ __("Portfolio") }}
+                                Portfolio
                             </Link>
 
                             <Link
                                 :href="route('services')"
                                 class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
                             >
-                                {{ __('Services') }}
+                                Services
                             </Link>
 
                             <Link
                                 :href="route('experiences')"
                                 class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
                             >
-                                {{ __('Experiences') }}
+                                Experiences
                             </Link>
 
                             <Link
                                 :href="route('blog')"
                                 class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
                             >
-                                {{ __('Blog') }}
+                                Blog
                             </Link>
 
                             <Link
                                 :href="route('contact-me')"
                                 class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
                             >
-                                {{ __('Contact') }}
+                                Contact
                             </Link>
                             <Link
                                 :href="route('login')"

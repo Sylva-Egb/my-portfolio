@@ -20,11 +20,11 @@ Route::get('/', function () {
 
 Route::get('/about-me', function() {
     return Inertia::render("About");
-});
+})->name('about-me');
 
 Route::get('/contact-me', function() {
     return Inertia::render("Contact");
-});
+})->name('contact-me');
 
 Route::get('/portfolio', [ProjectController::class, 'index'])->name('portfolio');
 Route::get('/portfolio/{project}', [ProjectController::class, 'show'])->name('portfolio.show');
