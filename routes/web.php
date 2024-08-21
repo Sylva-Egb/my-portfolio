@@ -7,16 +7,24 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\ExperienceController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
+use App\Models\User;
 use Inertia\Inertia;
 
 Route::get('/', function () {
+    $user = User::first();
+
+    $imagePath = $user->getFirstMediaUrl('profile');
+    $imageUrl = $imagePath ? asset($imagePath) : null;
+    
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('register'),
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
+        'image' => $imageUrl,
     ]);
 })->name('welcome');
+
 
 Route::get('/about-me', function() {
     return Inertia::render("About");
